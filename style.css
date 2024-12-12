@@ -1,0 +1,265 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #080710;
+    color: #fff;
+    background-size: cover;
+}
+
+/* Background Shapes */
+.background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+form * {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+.background .shape {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape:first-child {
+    background: linear-gradient(#1845ad, #23a2f6);
+    left: -80px;
+    top: -80px;
+}
+
+.shape:last-child {
+    background: linear-gradient(to right, #ff512f, #f09819);
+    right: -30px;
+    bottom: -80px;
+}
+
+/* Header and Navbar */
+header {
+    background: rgba(34, 65, 199, 0.8);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.0rem;
+    font-weight: 500; /* Adjusted for boldness */
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500; /* Adjusted for boldness */
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #478ca4;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-image {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 500; /* Adjusted for boldness */
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300; /* Adjusted for lighter weight */
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.button {
+    padding: 10px 20px;
+    background-color: #331dbf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600; /* Adjusted for boldness */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #478ca4;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: rgba(35, 52, 93, 0.8);
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about-content {
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    font-weight: 500; /* Adjusted for boldness */
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    font-weight: 300; /* Adjusted for lighter weight */
+    line-height: 1.6;
+}
+
+/* Blurred Container */
+.blurred-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 50px 35px;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.blurred-container h1 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.blurred-container p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #e5e5e5;
+    margin-bottom: 20px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(#1845ad, #23a2f6);
+    color: #080710;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.download-button a {
+    text-decoration: none;
+    color: #080710;
+}
+
+.download-button:hover {
+    background-color: #f0f0f0;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 430px) {
+    .hero-image {
+        width: 100px;
+    }
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    .navbar {
+        flex-wrap: wrap;
+    }
+}
+
+
